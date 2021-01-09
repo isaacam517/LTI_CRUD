@@ -1,0 +1,27 @@
+@model Autor
+
+@{
+    ViewData["Title"] = "Cadastro de Autor";
+}
+<div class="justify-content-center">
+    <form method="POST" asp-action="Cadastro">
+        <p>
+            <label asp-for="Nome" class="form-label">Nome</label>
+            <input asp-for="Nome" class="form-control w-50">
+        </p>
+        <p>
+            <label asp-for="DataNascimento">Data Nascimento</label>
+            <input asp-for="DataNascimento" class="form-control w-50">
+        </p>
+        <p>
+            <label asp-for="NomeLivro">Nome do Livro</label>
+            <input asp-for="NomeLivro" class="form-control w-50">
+        <p>    
+            <input class="btn btn-success" type="submit" value="Cadastrar Autor">
+        </p>
+    </form>
+</div>
+
+<p class="bg-success">
+    @ViewBag.Mensagem
+</p>

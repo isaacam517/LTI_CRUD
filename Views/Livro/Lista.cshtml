@@ -1,0 +1,32 @@
+@model IEnumerable<Livro>
+
+@{
+    ViewData["Title"] = "Lista Livros";
+}
+
+<table class="table-primary w-100">
+    <thead>
+        <tr>
+            <th class="w-25">Título</th>
+            <th class="w-25">Descrição</th>
+            <th class="w-25">Autor</th>
+        </tr>
+    </thead>
+            @* AQUI AO INVÉS DO ID NO AUTOR TEM Q VIM O NOME DO AUTOR *@
+    @foreach (Livro l in Model)
+    {
+        <tr>
+            <td class="table-primary">@l.Titulo</td>
+            <td class="table-primary">@l.Descricao</td>
+            <td class="table-primary">@l.NomeAutor</td>
+            <td>
+                <a class="btn btn-warning btn-sm" href="/Livro/Editar?Id=@l.Id">Editar</a>
+                <a class="btn btn-danger btn-sm" href="/Livro/Remover?Id=@l.Id">Remover</a>
+            </td>
+        </tr>
+    }
+</table>
+
+<p>
+    @ViewBag.Mensagem
+</p>

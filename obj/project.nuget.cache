@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "wFx6WeFOQ5f0mkfmBQmZWeN1Y0vlmJxngeI8bvTZWByhcaxNuNkJLV4lr3gyfQCQyjUD6AHN084EV+k5lQN+kA==",
+  "success": true,
+  "projectFilePath": "D:\\repositorios\\CRUD-LTI\\CRUD-LTI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\isaac\\.nuget\\packages\\mysqlconnector\\1.2.1\\mysqlconnector.1.2.1.nupkg.sha512"
+  ],
+  "logs": []
+}

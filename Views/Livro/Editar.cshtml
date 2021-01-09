@@ -1,0 +1,30 @@
+@model Livro
+
+@{
+    ViewData["Title"] = "Editar Livro";
+}
+
+<form method="POST" asp-action="Editar">
+    <p>
+        <input type="hidden" asp-for="Id">
+    </p>
+    <p>
+        <label asp-for="Titulo">Título</label>
+        <input asp-for="Titulo">
+    </p>
+    <p>
+        <label asp-for="Descricao">Descrição</label>
+        <input asp-for="Descricao">
+    </p>
+    <p>
+        <label asp-for="NomeAutor">Autor</label>
+        <input asp-for="NomeAutor">
+    </p>
+    <p>
+        <input type="submit" value="Salvar Edição">
+    </p>
+</form>
+
+<p>
+    @ViewBag.Mensagem
+</p>
